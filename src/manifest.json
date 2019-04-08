@@ -1,0 +1,16 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Import SVG as Artboards",
+      "identifier": "import-svg-as-artboard.my-command-identifier",
+      "script": "./my-command.js"
+    }
+  ],
+  "menu": {
+    "isRoot": true,
+    "items": ["import-svg-as-artboard.my-command-identifier"]
+  }
+}

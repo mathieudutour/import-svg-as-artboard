@@ -1,0 +1,35 @@
+{
+  "name": "import-svg-as-artboard",
+  "description": "Import SVG files as Artboards.",
+  "version": "0.1.0",
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "skpm": {
+    "name": "Import SVG as Artboards",
+    "manifest": "src/manifest.json",
+    "main": "import-svg-as-artboard.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.5.11"
+  },
+  "author": "mathieudutour <mathieu@dutour.me>",
+  "dependencies": {
+    "@skpm/dialog": "^0.2.5",
+    "@skpm/fs": "^0.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathieudutour/import-svg-as-artboard.git"
+  },
+  "license": "MIT"
+}
