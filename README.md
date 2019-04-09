@@ -7,7 +7,7 @@ This plugin allows you to import SVG as Artboards instead, so that the offset is
 
 ## Installation
 
-- [Download](./releases/download/latest/import-svg-as-artboard.sketchplugin.zip) the latest release of the plugin
+- [Download](../../releases/download/latest/import-svg-as-artboard.sketchplugin.zip) the latest release of the plugin
 - Un-zip
 - Double-click on import-svg-as-artboard.sketchplugin
 
