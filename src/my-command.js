@@ -19,7 +19,11 @@ export default function() {
         const name = path.basename(filepath, ".svg");
 
         const importer = MSSVGImporter.svgImporter();
-        importer.prepareToImportFromURL_error(NSURL.fileURLWithPath(filepath), null);
+        if (importer.prepareToImportFromURL) {
+          importer.prepareToImportFromURL(NSURL.fileURLWithPath(filepath));
+        } else {
+          importer.prepareToImportFromURL_error(NSURL.fileURLWithPath(filepath), null);
+        }
 
         const width = importer.graph().width();
 
