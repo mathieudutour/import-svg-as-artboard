@@ -25,9 +25,9 @@ export default function() {
           importer.prepareToImportFromURL_error(NSURL.fileURLWithPath(filepath), null);
         }
 
-        const width = importer.graph().width();
+        const width = importer.graph().element().width();
 
-        const frame = NSMakeRect(currentX, 0, width, importer.graph().height());
+        const frame = NSMakeRect(currentX, 0, width, importer.graph().element().height());
         const root = MSArtboardGroup.alloc().initWithFrame(frame);
         root.name = name;
         importer.graph().makeLayerWithParentLayer_progress(root, null);
