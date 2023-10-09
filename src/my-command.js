@@ -39,10 +39,13 @@ export default function() {
         importer.graph().makeLayerWithParentLayer_progress(root, null);
         root.ungroupSingleChildDescendentGroups();
         importer.scale_rootGroup(importer.importer().scaleValue(), root);
+        // The container might have shifted from the desired location a bit after scaling
+        root.frame().setX(currentX);
+        root.frame().setY(0);
 
         selectedPage.layers.unshift(root);
 
-        currentX += width + 20;
+        currentX += root.frame().width() + 20;
       })
   );
 }
