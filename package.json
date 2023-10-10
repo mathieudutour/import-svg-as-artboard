@@ -20,12 +20,12 @@
     "postinstall": "npm run build && skpm-link"
   },
   "devDependencies": {
-    "@skpm/builder": "^0.5.11"
+    "@skpm/builder": "^0.9.5"
   },
   "author": "mathieudutour <mathieu@dutour.me>",
   "dependencies": {
-    "@skpm/dialog": "^0.2.5",
-    "@skpm/fs": "^0.2.4"
+    "@skpm/dialog": "^0.4.2",
+    "@skpm/fs": "^0.2.6"
   },
   "repository": {
     "type": "git",
